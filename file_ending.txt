@@ -1,0 +1,8 @@
+
+\begin{thebibliography}{11}
+
+\bibitem{GPM}
+\'A. Gonz\'alez-Prieto and V. Mu\~noz, \emph{Motive of the $\mathrm{SL}_4(\mathbb{C})$-character variety of torus knots}, arXiv.
+\end{thebibliography}
+
+\end{document}
