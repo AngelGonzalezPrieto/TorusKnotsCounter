@@ -1,0 +1,82 @@
+\documentclass[10pt,a4paper]{amsart}
+
+\usepackage{bm}
+\usepackage{stmaryrd}
+
+\setlength{\textheight}{650pt}
+
+\begin{document}
+
+\section*{Introduction}
+
+\vspace{-0.05cm}
+
+This paper contains the computation of the motive of the irreducible $\mathrm{SL}_{2}(k)$-character variety of torus knots for any algebraically closed field $k$ of zero characteristic. The calculation is based on the methods introduced in the paper \cite{GPM}. 
+
+The notations used in this paper are the following:
+\begin{itemize}
+	\item $R_{2}^{\textrm{irr}}$ is the irreducible $\mathrm{SL}_{2}(k)$-representation variety of torus knots, that is, the variety of irreducible representations $\rho: \Gamma \to \mathrm{SL}_{2}(k)$ where $\Gamma = \Gamma_{n,m}$ is the fundamental group of the complement of the $(n,m)$-torus knot (see section {2} of \cite{GPM}).
+	\item ${\frak M}_{2}^{\textrm{irr}} = R_{2}^{\textrm{irr}} \sslash \mathrm{SL}_{2}(k)$ is the irreducible $\mathrm{SL}_{2}(k)$-character variety of torus knots, that is, the moduli space of representations (see section {2} of \cite{GPM}).
+	\item $\kappa = (\bm{\epsilon}, \bm{\varepsilon})$ is a configuration of eigenvalues, that is a collection of possible eigenvalues for the matrices $A$ and $B$ of a torus knot representation $\rho = (A,B)$ (see section {2} of \cite{GPM}).
+	\item $\tau$ is the type of a semi-simple filtration of a torus knot representation (see section 2.1 of \cite{GPM}).
+	\item $\xi$ is the shape of the type $\tau$, that is the collection of dimensions and multiplicities of each isotypic component (see section 2.1 of \cite{GPM}).
+	\item $\sigma_A$ are the collections of eigenvalues of $A$ for each isotypic component of a torus knot representation $\rho = (A,B)$ (see section 7.1 of \cite{GPM}).
+	\item $\sigma_B$ are the collections of eigenvalues of $B$ for each isotypic component of a torus knot representation $\rho = (A,B)$ (see section 7.1 of \cite{GPM}).
+	\item $\mathcal{M}_{\tau}$ is the space parametrizing possible completions of a semi-simple representation to a general representation of type $\tau$ (see section 4 of \cite{GPM})
+	\item $\mathcal{G}_{\tau}$ is the gauge group acting on $\mathcal{M}_{\tau} \times \mathrm{SL}_{2}(k)$ that identifies isomorphic completions (see section 4 of \cite{GPM}).
+	\item ${\frak M}_{\tau}^{\textrm{irr}}$ is the variety of possible semi-simplifications of a representation of type $\tau$ (see section 4 of \cite{GPM}).
+	\item $R(\tau)$ is the variety of representations of type $\tau$.
+	\item $m_{\kappa}(\tau)$ is the multiplicity of the type $\tau$, that is the number of isomorphic components $R(\tau')$ of types $\tau'$ with the same shape as $\tau$ but whose eigenvalues are given by a permutation of the ones of $\tau$ that preserves their multiplicity (see section 5 of \cite{GPM}).
+	\item $C_{\pi, \pi'}$ are the number of isomorphic components given by configurations of eigenvalues with the same structure of repeated eigenvalues (see Section 6 of \cite{GPM}). Here, $\pi, \pi'$ are two partitions of ${2}$ that determine the number of repeated eigenvalues of the matrices $A$ and $B$ of a representation $\rho = (A,B)$. If $\pi = \left\{1^{e_1}, \ldots, {2}^{e_{2}}\right\}$ and $\pi' = \big\{1^{e_1'}, \ldots, {2}^{e_{2}'}\big\}$ we have the following characterization in terms of multinomial numbers (Theorem 6.8 of \cite{GPM})
+	$$
+		C_{\pi, \pi'} = \frac{{2}}{nm} \begin{pmatrix}
+	n\\
+	e_1, \ldots, e_{2} \end{pmatrix}\begin{pmatrix}
+	m\\
+	e_1', \ldots, e_{2}'\end{pmatrix}.
+	$$
+\end{itemize}
+
+Combinatorial formulas for the motives $[\mathcal{M}_{\tau}],[\mathcal{G}_{\tau}]$ and $[{\frak M}_{\tau}^{\textrm{irr}}]$ are described in section 5 of \cite{GPM} in terms of the structure of the type $\tau$.
+
+The structure of the paper is as follows. Each section describes the count of the motive $[{\frak M}_\kappa]$ for a possible configuration of eigenvalues $\kappa$. For that purpose, we analyze all the types $\tau$ compatible with $\kappa$ and compute the motives $[R(\tau)]$. A configuration of eigenvalues $\kappa$ not appearing as a section of the paper means that $R^{\textrm{irr}}_\kappa = \emptyset$ (see Remark {2}.5 and Proposition 8.1 of \cite{GPM}). In the final section of this paper, we summarize the results for each configuration $\kappa$ and we provide the final result depending on the combinatorial coefficients $C_{\pi, \pi'}$.
+
+\textbf{Warning: }The script generating this paper is only valid for rank $\leq 4$. The result for higher rank may not be correct.
+
+\newpage{}
+
+
+\section{Configuration $\bm{\epsilon} = (\epsilon_1,\epsilon_2)$ and $\bm{\varepsilon} =(\varepsilon_1,\varepsilon_2)$}
+\noindent\rule{9cm}{2pt}\vspace{0.2cm}
+
+\noindent\textbf{Total count of $\kappa = ((\epsilon_1,\epsilon_2), (\varepsilon_1,\varepsilon_2))$}\medskip
+
+${[R_{\kappa}^{\textrm{red}}]} = 4 \, q^{3} + 2 \, q^{2} - 2 \, q ,$
+
+${[R_{\kappa}^{\textrm{irr}}]} = q^{4} - 2 \, q^{3} - q^{2} + 2 \, q ,$
+
+${[R_{\kappa}]} = q^{4} + 2 \, q^{3} + q^{2} ,$
+
+${[{\frak M}_{\kappa}]} = q - 2 .$
+
+\newpage{}
+
+\section*{Summary}
+$[R_{(\epsilon_1,\epsilon_2),(\varepsilon_1,\varepsilon_2)}^{\textrm{irr}}] = q^{4} - 2 \, q^{3} - q^{2} + 2 \, q .$
+
+
+\medskip\textbf{Final result representations}.\medskip
+
+$[R_{2}^{\textrm{irr}}] = (q^{4} - 2 \, q^{3} - q^{2} + 2 \, q) {C_{(1, 1), (1, 1)}}.$
+
+\medskip\textbf{Final result characters}.\medskip
+
+$[{\frak M}_{2}^{\textrm{irr}}] = {C_{(1, 1), (1, 1)}} (q - 2).$
+
+\begin{thebibliography}{11}
+
+\bibitem{GPM}
+\'A. Gonz\'alez-Prieto and V. Mu\~noz, \emph{Motive of the $\mathrm{SL}_4(\mathbb{C})$-character variety of torus knots}, arXiv.
+\end{thebibliography}
+
+\end{document}
